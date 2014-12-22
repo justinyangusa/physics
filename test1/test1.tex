@@ -10,6 +10,14 @@
 \usepackage[export]{adjustbox}
 \titlespacing{\paragraph}{0pt}{0pt}{1em}
 % \setenumerate[2]{label={\alph*.}}
+\usepackage{fancyhdr}
+\fancypagestyle{firstpage}
+{
+	\renewcommand{\headrulewidth}{0pt}
+	\rhead{Version 1.1}
+	\cfoot{\thepage}
+}
+\thispagestyle{firstpage}
 \begin{document}
 \section*{Physics Club: $F=ma$ Practice Test 1}
 Assume the acceleration due to gravity near the surface of the Earth $g = 10$ m/s$^2$.
@@ -259,6 +267,10 @@ Two objects of mass $m$ and $3m$ are placed at either end of a spring of spring 
 
 \item
 Two uniform circular disks of the same material and thickness are adhered together at point N. Both disks lie in the same vertical plane. The rigid body is hinged at point P and it can rotate freely about P in the vertical plane.  PO $\perp$ OM and ON $= 3$ NM, where point O and point M are the centers of the disks. When static equilibrium is reached, find the angle $\theta$ between PO and the vertical direction.
+
+\begin{tabular}{l r}
+
+\begin{minipage}{0.6\textwidth}
 \begin{enumerate}
 \item $16.7\degree$
 \item $26.6\degree$
@@ -266,6 +278,11 @@ Two uniform circular disks of the same material and thickness are adhered togeth
 \item $5.2\degree$
 \item $7.6\degree$
 \end{enumerate}
+\end{minipage} &
+\begin{minipage}{0.3\textwidth}
+\includegraphics[width=\textwidth,left]{disks.png}
+\end{minipage}
+\end{tabular}
 
 % \item
 % A uniform rectangular wood block of mass $M$, with length $a$ and height $b=3a$, rests on an incline as shown. The incline and the wood block have a coefficient of static friction $\mu_s$. The incline is moved upward from an angle of zero through and angle $\theta$. At some critical angle the block will either tip over or the block will tip over (and not slip) at the critical angle.
@@ -552,6 +569,7 @@ Three small objects, all of mass $M$, are released simultaneously from the top o
 \item a solid cylinder of radius $R$ from an incline plane with an incline angle of $45\degree$
 \item a hollow cylinder of radius $R$ from an incline plane with an incline angle of $60\degree$
 \end{enumerate}
+Assume that the cylinders roll down their corresponding incline planes without slipping and the cube slides down the plane without friction. Which object(s) reach(es) the bottom of the plane first?
 \begin{enumerate}
 \item I
 \item II
@@ -578,7 +596,7 @@ Two monkeys of the same weight are holding tightly the two end of a rope with ne
 \end{enumerate}
 \end{minipage} &
 \begin{minipage}{0.25\textwidth}
-\includegraphics[width=0.75\textwidth,left]{monkey.png}
+\includegraphics[width=0.75\textwidth,left]{monkey2.png}
 \end{minipage}
 \end{tabular}
 
@@ -667,7 +685,7 @@ A ball is released vertically from a height $H$ above an incline and makes sever
 \end{enumerate}
 \end{minipage} &
 \begin{minipage}{0.3\textwidth}
-\includegraphics[width=\textwidth,left]{bounce.png}
+\includegraphics[width=\textwidth,left]{bounce2.png}
 \end{minipage}
 \end{tabular}
 
