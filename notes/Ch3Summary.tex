@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage{asymptote}
+\usepackage{wrapfig}
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+\begin{document}
+\begin{center}
+\Large{CHAPTER 3 SUMMARY. \textbf{Vectors and Two-Dimensional Motion}}
+
+\large{Justin Yang}
+
+October 26, 2012
+\end{center}
+
+\section*{General Properties of Vectors}
+
+A \textbf{vector quantity} has both a magnitude and a direction.\\A \textbf{scalar quantity} has magnitude, but no direction.
+
+\hspace{1mm}
+
+\noindent
+\textit{Equality} $\vec{A}\ =\ \vec{B}$ if $A = B$ and their directions are the same.
+
+\hspace{1mm}
+
+\noindent
+\textit{Addition} Vectors can be added both geometrically and algebraically.
+
+\underline{Geometrically} \textsl{Head-to-tail} and \textsl{parallelogram} methods can be used.
+
+Thus, the \textbf{resultant vector} $\vec{R}\ =\ \vec{A} + \vec{B}$ is the sum of two or more vectors.
+
+\hspace{1mm}
+
+\noindent
+\textit{Negative} The negative of a vector has the same magintude but opposite direction.
+
+\hspace{1mm}
+
+\noindent
+\textit{Subtraction} $\vec{A} + \vec{B}\ =\ \vec{A} + \left(-\vec{B}\right)$.
+
+\hspace{1mm}
+
+\noindent
+\textit{Multiplication by a Scalar} $s \vec{A}$ has magnitude $sA$ and has the same direction as $\vec{A}$ if $s$ if positive and opposite direction if $s$ is negative.
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+\begin{center}
+\vspace{-20pt}
+\begin{asy}
+import graph;
+xaxis("$x$", xmin=-0.5);
+yaxis("$y$");
+import olympiad;
+	defaultpen(1.0);
+	size(5cm);
+	draw((0,0)--(2,1),EndArrow);
+	markscalefactor=0.05;
+	draw(anglemark((2,0),(0,0),(2,1)));
+	draw((2,0)--(2,1),dashed);
+	draw((0,1)--(2,1),dashed);
+	label("$A_x = A \cos{\theta}$",(0,0)--(2,0),S);
+	label("$A_y = A \sin{\theta}$",(0,0)--(0,1),W);
+	dot((2.2,1.2),invisible);
+\end{asy}
+\vspace{-20pt}
+\end{center}
+\end{wrapfigure}
+
+\hspace{1mm}
+
+\noindent
+\textit{Components} The component of $\vec{A}$ in the direction of a directed line $S$ is $A_S = A\cos{\theta}$, where $\theta$ is the angle between $S$ and $\vec{A}$.\\A vector can be specified by its rectangular components along the $x$- and $y$-axes $$A_x = A\cos{\theta},$$ $$A_y = A\sin{\theta}.$$\\It can also be specified by its magnitude and direction through the Pythagorean theorem and the definition of tangent $$A=\sqrt{A_x^2 + A_y^2},$$ $$\tan{\theta} = \frac{A_y}{A_x}.$$\\We can hence define \underline{algebraic} addition of vectors such that $$\vec{A}\ =\ \vec{A} + \vec{B}\ \Longleftrightarrow C_x = A_x + B_x \textrm{ and } C_y = A_y + B_y.$$
+
+\section*{Position, Velocity, and Acceleration}
+
+The \textbf{position vector} of a particle at a point $\left(x, y\right)$ is a vector from the origin to the point $$\vec{r} = x\hat{i} + y\hat{j}.$$
+
+\noindent
+The \textbf{displacement} is the change in position $$\Delta{\vec{r}} = \vec{r}_2 - \vec{r}_1.$$
+
+\noindent
+The \textbf{average velocity} in the time interval $\Delta{t} = t_2 - t_1$ $$\vec{v}_{av} = \frac{\Delta{\vec{r}}}{\Delta{t}}.$$
+
+\noindent
+The \textbf{instantaneous velocity} $$\vec{v} = \lim_{\Delta{t} \to 0} \frac{\Delta{\vec{r}}}{\Delta{t}}.$$
+
+\noindent
+The \textbf{average acceleration} in the time interval $\Delta{t} = t_2 - t_1$ $$\vec{a}_{av} = \frac{\Delta{\vec{v}}}{\Delta{t}}.$$
+
+\noindent
+The \textbf{instantaneous acceleration} $$\vec{a} = \lim_{\Delta{t} \to 0} \frac{\Delta{\vec{v}}}{\Delta{t}}.$$
+
+\section*{Relative Velocity}
+
+Measurements of velocity depend on the reference frame of the observer. A reference frame is just a coordinate system.
+
+\noindent
+Consider a particle of velocity $\vec{v}_{pA}$ relative to reference frame A, which has velocity $\vec{v}_{AB}$ relative to frame B, the velocity of the particle relative to frame B is then $$\vec{v}_{pB} = \vec{v}_{pA} + \vec{v}_{AB}.$$\\However, this relative-velocity realtion is only true when the velocities are small compared to the speed of light.
+\section*{Projectile Motion}
+
+Consider an object projected with an initial velocity $\vec{v}_0$ at angle angle $\theta_0$ with the horizontal surface. The components of the velocity are $$v_{0x} = v_0 \cos{\theta_0},$$ $$v_{0y} = v_0 \sin{\theta_0}.$$
+
+\noindent
+In the absense of air resistance, the motion of the projectile is the superposition of a constant-velocity motion in the $x$-direction and a constant-acceleration in the $y$-direction. $$a_x = 0,$$ $$a_y = -g.$$
+
+\noindent
+Thus, the kinematics of one-dimensional motion can be applied $$\Delta{x} = v_{0x} t,$$ $$v_y = v_{0y} - gt,$$ $$\Delta{y} = v_{0y} t - \frac{1}{2} gt^2,$$ $$v_y^2 - v_{0y}^2 = -2g \Delta{y}.$$
+
+We can also show that the path of the projectile is a parabola $$y = x\tan{\theta_0} - \frac{1}{2} \frac{g}{v_0^2 \cos{2\theta_0}}.$$
+
+\end{document}

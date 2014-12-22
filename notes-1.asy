@@ -1,0 +1,24 @@
+if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
+defaultfilename="notes-1";
+if(settings.render < 0) settings.render=4;
+settings.outformat="";
+settings.inlineimage=true;
+settings.embed=true;
+settings.toolbar=false;
+viewportmargin=(2,2);
+
+import graph;
+xaxis("$x$", xmin=-0.5);
+yaxis("$y$");
+import olympiad;
+defaultpen(1.0);
+size(5cm);
+draw((0,0)--(2,1),EndArrow);
+markscalefactor=0.05;
+draw(anglemark((2,0),(0,0),(2,1)));
+draw((2,0)--(2,1),dashed);
+draw((0,1)--(2,1),dashed);
+label("$A_x = A \cos{\theta}$",(0,0)--(2,0),S);
+label("$A_y = A \sin{\theta}$",(0,0)--(0,1),W);
+dot((2.2,1.2),invisible);

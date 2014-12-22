@@ -1,0 +1,25 @@
+if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
+defaultfilename="notes-3";
+if(settings.render < 0) settings.render=4;
+settings.outformat="";
+settings.inlineimage=true;
+settings.embed=true;
+settings.toolbar=false;
+viewportmargin=(2,2);
+
+import graph;
+xaxis("$F_{app}$", xmin=0);
+yaxis("$f$", ymin=0);
+labelx("Applied force",(45,0));
+axes(ylabel="Frictional force\ \ \ \ \ ");
+size(6cm);
+draw((0,0)--(50,50));
+draw((50,50)--(55,40));
+draw((55,40)--(100,40));
+draw((30,10)--(10,10),EndArrow);
+label("$f_{s} = F_{app}$",(30,10),E);
+draw((50,70)--(50,50),EndArrow);
+label("$f_{s, max} = \mu_{s} F_{n}$",(50,70),N);
+draw((75,30)--(75,40),EndArrow);
+label("$f_{k} = \mu_{k} F_{n}$",(75,30),S);

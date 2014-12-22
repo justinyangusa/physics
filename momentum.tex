@@ -1,0 +1,114 @@
+\documentclass{beamer}
+\title{Linear Momentum \& Impulse}
+\author{Justin Yang}
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Momentum}
+The product of mass and velocity of an object is defined as the \textbf{momentum} of the object $$\vec{p} = m \vec{v}.$$
+Momentum is a vector quantity. Its SI unit is N $\cdot$ s. Larger momenta make objects harder to stop.
+%It is easier to stop a slow baseball than a fast bullet.
+\\Newton's second law was originally written as $$\vec{F} = m \vec{a} = m \lim_{\Delta{t} \to 0}{\frac{\Delta{\vec{p}}}{\Delta{t}}} = \frac{d\vec{p}}{dt}.$$ In terms of the average acceleration, we can define an average force $$\vec{F}_\mathrm{av} = \frac{\Delta{\vec{p}}}{\Delta{t}} = \frac{\Delta{\left(m \vec{v}\right)}}{\Delta{t}}.$$
+Thus, $$\vec{F}_{a\mathrm{v}} \Delta{t} = \Delta{\vec{p}} = \vec{p}_f - \vec{p}_i = m \vec{v}_f - m \vec{v}_i.$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Impulse}
+Recall that displacement is given by the area under the velocity-versus-time curve. Analogously, the change in momentum is given by the area force-versus-time curve, defined as the \textbf{impulse} of the force. Thus, the impulse $\vec{J}$ and the average force are related by $$\vec{J} = \vec{F}_\mathrm{av} \Delta{t} = \Delta{\vec{p}}.$$
+Impulse is a vector quantity. Its SI unit is $\mathrm{N} \cdot \mathrm{s}$. Impulse produces a change in momentum.
+\end{frame}
+
+\begin{frame}
+\frametitle{Center of Mass}
+The motion of a system of particles can be described in terms of the motion of the center of mass plus the motion of each of the particles relative to the center of mass.
+\\The \textbf{center of mass} of a system of two point particles of masses $m_1$ and $m_2$ in one direction with corrdinates $x_1$ and $x_2$ is the position with coordinate $x_\mathrm{cm}$ as defined by $$M x_\mathrm{cm} = m_1 x_1 + m_2 x_2$$ where $M = m_1 + m_2$ is the total mass of the system.
+\\Generalize to a system of $N$ particles in three dimensions: $$M \vec{r}_\mathrm{cm} = m_1 \vec{r}_1 + m_2 \vec{r}_2 + \dots = \sum_i m_i \vec{r}_i \hspace{1cm} \left[M \vec{r}_\mathrm{cm} = \int{\vec{r}\,dm}\right].$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Center of Mass}
+For highly symmetric objects, the center of mass is at the center of symmetry. The center of mass of a system consisting of two rods can be found by treating each rod as a point particle at its individual center of mass.
+\\The gravitational potential energy of a system of particles in a uniform gravitational field is the same as if all the mass was concentrated at the center of mass: $$U = \sum_i m_i gh_i = g \sum_i m_i h_i = Mgh_\mathrm{cm}.$$
+If we suspend any irregular object from a pivot, the center of mass of the object will lie on the vertical line drawn directly downward from the pivot because that corresponds to minimum potential energy. Now suspend the object from another pivot and not where the vertical line now passes across the object. The center of mass will lie at the intersection of the two lines.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Motion of the Center of Mass}
+The center of mass of a system moves like a particle of mass $M = \sum{m_i}$ under the influence of the net external force acting on the system.
+\\Consider a system consisting of two particles of mass $m_1$ and $m_2$ $$\vec{F}_{1\mathrm{, ext}} + \vec{F}_{21} = m_1 \vec{a}_1,$$ $$\vec{F}_{2\mathrm{, ext}} = +\vec{F}_{12} = m_2 \vec{a}_2.$$
+By Newton's third law, we have $\vec{F}_{12} = -\vec{F}_{21}$. Thus, $$\vec{F}_{1\mathrm{, ext}} + \vec{F}_{2\mathrm{, ext}} = m_1 \vec{a}_1 +m_2 \vec{a}_2 = M \vec{a}_\mathrm{cm}.$$
+In general, $$\sum m_i \vec{a}_i = \sum \vec{F}_i = \sum \vec{F}_{i\mathrm{, int}} + \sum \vec{F}_{i\mathrm{, ext}} = \sum \vec{F}_{i\mathrm{, ext}} = \vec{F}_\mathrm{net, ext}$$ so we have Newton's second law for a system of particles $$\vec{F}_\mathrm{net, ext} = \sum m_i \vec{a}_i = M \vec{a}_\mathrm{cm}.$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Conservation of Momentum}
+The total momentum $\vec{P}$ of a system of particles is the sum of the momenta of the individual particles: $$\vec{P} = \sum m_i \vec{v}_i = \sum \vec{p}_i = M \vec{v}_\mathrm{cm}.$$
+Thus, $$\vec{F}_\mathrm{net, ext} = \lim_{\Delta{t} \to 0}{\frac{\Delta{\vec{P}}}{\Delta{t}}} = \frac{d\vec{P}}{dt},$$ $$\vec{J}_\mathrm{net, ext} = \Delta{\vec{P}}.$$
+\textbf{The law of conservation of momentum} When the net external force acting on a system of particles remains zero, the total momentum of the system remains constant: $$\vec{P} = \sum m_i \vec{v}_i = M \vec{v}_\mathrm{cm} = \mathrm{constant\ if\ } \vec{F}_\mathrm{net, ext} = 0.$$
+Internal forces may change the mechanical energy of a system but they have no effect on the system's total momentum.
+\end{frame}
+
+\begin{frame}
+\frametitle{Kinetic Energy of a System}
+If the net external force on a system remains zerom the total momentum of the system must remain constant; however, the total mechanical energy of the system can change.
+\\The kinetic energy of a system of particles can be written as the sum of the kinetic energy associated with the motion of the center of mass and the kinertic energy associated with the motion of the particles of the system relative to the center of mass.
+$$K = \frac{1}{2} M v_\mathrm{cm}^2 + \sum \frac{1}{2} m_i u_i^2$$ where $M = \sum{m_i}$ is the total mass and $\vec{u}_i$ is the velocity of the $i$th particle relative to the center of mass.
+\end{frame}
+
+\begin{frame}
+\frametitle{Collisions}
+In a \textbf{collision}, two objects interact strongly for a very short time.
+\\During a collision, the only important forces acting on the two-object system are the interaction forces, which are equal and opposite, so the total momentum of the system remains unchanged.
+\\Often the collision time is so short that during the collision any displacements of the colliding objects can be neglected.
+\\\textbf{Elastic collision}: there is no change in kinetic energy before and after collision.
+\\\textbf{Inelastic collision}: kinetic energies before and after collision are different, In a \textbf{perfectly inelastic collision}, the two objects stick together after collision. Thus, all of the kinetic energy relative to the center of mass is converted to thermal or internal energy of the system.
+\end{frame}
+
+\begin{frame}
+\frametitle{Collisions in one dimension}
+Consider a collision between two objects. Conservation of momentum gives $$m_1 v_{1\mathrm{f}} + m_2 v_{2\mathrm{f}} = m_1 v_{1\mathrm{i}} + m_2 v_{2\mathrm{i}}.$$
+The velocities are understood to be the components of the velocities so they can be positive or negative.
+\\To solve for the final velocities, we need one more relation, which depends on the type of collision.
+\end{frame}
+
+\begin{frame}
+\frametitle{Perfectly Inelastic Head-on Collisions}
+The two objects stick together after collision so $$v_{1\mathrm{f}} = v_{2\mathrm{f}} = v_\mathrm{f} = v_\mathrm{cm},$$ $$m_1 v_{1\mathrm{i}} + m_2 v_{2\mathrm{i}} = \left(m_1 + m_2\right) v_\mathrm{f}.$$
+The kinetic energy of the system before and after collision can be written in terms the momentum of each particle as $$K_i = \frac{p_{1\mathrm{i}}^2}{2m_1} + \frac{p_{2\mathrm{i}}^2}{2m_2},$$ $$K_f = \frac{P_\mathrm{f}^2}{2\left(m_1 + m_2\right)},$$ where the momentum of the system after collision $P_\mathrm{f} = p_{1\mathrm{i}} + p_{2\mathrm{i}}$. Show as an exercize that $$\Delta{K} = K_f - K_i = -\frac{\left(m_1 p_{2\mathrm{i}} - m_2 p_{1\mathrm{i}}\right)^2}{2\left(m_1 + m_2\right) m_1 m_2}.$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Elastic head-on collisions}
+Kinetic energy is conserved: $$\frac{1}{2} m_1 v_{1\mathrm{i}}^2 + \frac{1}{2} m_2 v_{2\mathrm{i}}^2 = \frac{1}{2} m_1 v_{1\mathrm{f}}^2 + \frac{1}{2} m_2 v_{2\mathrm{f}}^2.$$
+Using momentum conservation one can obtain a simpler relation: $$v_{2\mathrm{f}} - v_{1\mathrm{f}} = v_{1\mathrm{i}} - v_{2\mathrm{i}}.$$
+\textit{The speed of recession equals the speed of approach in an elastic collision.}
+\\The coefficient of restitution $$e = \frac{v_\mathrm{rec}}{v_\mathrm{app}} = -\frac{v_{2\mathrm{f}} - v_{1\mathrm{f}}}{v_{2\mathrm{i}} - v_{1\mathrm{i}}}.$$
+Special cases of head-on elastic collisions between two particles of the same mass
+\end{frame}
+
+\begin{frame}
+\frametitle{Collisions in Three Dimensions}
+Conservation of momentum is a vector equation in two or three dimensional collisions $$m_1 \vec{v}_{1\mathrm{i}} + m_2 \vec{v}_{2\mathrm{i}} = m_1 \vec{v}_{1\mathrm{f}} + m_2 \vec{v}_{2\mathrm{f}}.$$
+Conservation of momentum can be valid in only one of the three dimensions if only the corresponding component of the net external force is zero.
+\end{frame}
+
+\begin{frame}
+\frametitle{Perfectly Inelastic Collisions}
+$$m_1 \vec{v}_{1\mathrm{i}} + m_2 \vec{v}_{2\mathrm{i}} = \left(m_1 + m_2\right) \vec{v}_\mathrm{f}.$$
+This means the three velocity vectors and thus the collision are in the same plane. Two equations with two unknowns so the final velocity (cm velocity) can be solved.
+\end{frame}
+
+\begin{frame}
+\frametitle{Elastic Collisions}
+Generally more complicated. A simplified case is when an object collides with another one that is initially at rest: $$m_1 \vec{v}_{1\mathrm{i}} = m_1 \vec{v}_{1\mathrm{f}} + m_2 \vec{v}_{2\mathrm{f}}.$$
+So the collision occurs in a plane, which we assume to have been determined experimentally and we take it as the $xy$ plane. This collision is called a \textit{glancing} collision.
+\\We have four unknowns and three equations: an additional one from energy conservation.
+\\In practice the fourth equation is often found experimentally, by measuring the angle of deflection or the angle or recoil.
+\\In the special case when all the masses equal, we can show that the final velocity vectors are perpendicular to each other.
+\end{frame}
+\end{document}

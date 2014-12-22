@@ -1,0 +1,277 @@
+\documentclass[letterpaper]{beamer}
+\usetheme{Warsaw}
+% \usefonttheme{serif}
+\usepackage[utf8]{inputenc}
+\usepackage{tabu}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{graphicx}
+
+%Information to be included in the title page:
+\title{Mechanics Wrap-Up}
+\subtitle{Static Equilibrium, Elasticity, Gravitation, Fluids, Oscillations}
+\author{Physics Club}
+\date{December 4, 2014}
+ 
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Static Equilibrium}
+\begin{block}{Conditions for Equilibrium}
+The net external force and the net external torque about any point must remain zero for a rigid body to be in equilibrium.
+$$\sum{F}=0$$
+$$\sum{\tau}=0$$
+\end{block}
+
+\begin{block}{The Center of Gravity}
+The center of gravity and the center of mass coincide for a uniform gravitational field. This can be seen more easily as follows. For an object of mass $M = \sum{m_i}$ in a uniform gravitational field $g$, the net torque $$\tau_\text{net}=\sum_i r_i \times m_ig = r_{cm} \times Mg$$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Static Equilibrium}
+\begin{block}{Couple}
+The torque produced by a couple, a pair of parallel forces of equal magnitudes, is the same about all points in space.
+\end{block}
+
+\begin{block}{Static Equilibrium in an Accelerated Frame}
+An accelerated frame is a frame accelerating relative to an inertial reference frame. A static object in an accelerated reference frame has a center of mass acceleration equal to that of the reference frame. Also Newton's second law for rotation applies to rotation about the center of mass whether or not it is accelerating.
+$$\sum{F}=ma_{cm}$$
+$$\sum{\tau_{cm}}=0$$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Elasticity}
+
+\begin{block}{Elastic Modulus}
+A force may deform a solid object but when the force is removed, the object tends to return to its original shape and size. This is the case for forces up to a certain maximum, the \textbf{elastic limit}.
+$$\text{Elastic modulus} \equiv \frac{\text{stress}}{\text{strain}}$$
+\end{block}
+
+\begin{block}{Young's Modulus: Elasticity in Length}
+Measures the resistance of a solid to a change in its length
+$$Y \equiv \frac{\text{tensile stress}}{\text{tensile strain}} = \frac{F/A}{\Delta L/L}$$
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Elasticity}
+
+\begin{block}{Shear Modulus: Elasticity of Shape}
+Measures the resistance to motion of the planes within a solid parallel to each other
+$$S \equiv \frac{\text{shear stress}}{\text{shear strain}} = \frac{F/A}{\Delta x/h} = \frac{F/A}{\tan\theta}$$
+\end{block}
+
+\begin{block}{Bulk Modulus: Elasticity of Volume}
+Measures the resistance of solids or liquids to changes in their volume
+$$B \equiv \frac{\text{volume stress}}{\text{volume strain}} = -\frac{\Delta F/A}{\Delta V/V_i} = -\frac{\Delta P}{\Delta V/V_i}$$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Basic Definitions of Gravity}
+\begin{block}{Newton's Law of Universal Gravitation}
+$$F_g = G \frac{m_1m_2}{r^2}$$ where $G = 6.674 \times 10^{-11}$ N $\cdot$ m$^2$/kg$^2$.
+\end{block}
+
+\begin{block}{Gravity Near the Surface of the Earth}
+$g \approx 9.81$ m/s$^2$ near the surface of the Earth. By Newton's Law of Universal Gravitation $$g=G\frac{M_E}{R_E^2}$$ where the mass of the Earth $M_E = 5.97 \times 10^{24}$ kg and the average radius of the Earth $R_E = 3.39 \times 10^6$ m.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Gravitational Fields}
+
+\begin{block}{Gravity Above the Earth}
+$$g = \frac{GM_E}{\left(R_E+h\right)^2}.$$ $mg \to 0$ as $r \to \infty$.
+\end{block}
+
+\begin{block}{Gravitational Fields}
+$$\vec{g} \equiv \frac{\vec{F}_g}{m_0}$$
+\end{block}
+
+\begin{block}{Geosynchronous Orbits}
+Satellites can maintain a constant position above the Earth.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Gravitational Potential Energy}
+
+\begin{block}{Gravitational Potential Energy}
+$U_g = mgh$ near the surface of the Earth. More generally $$U = -\frac{Gm_1m_2}{r}.$$
+\end{block}
+
+\begin{block}{Orbits}
+$$E_\text{circle} = -\frac{GMm}{2r},$$
+$$E_\text{ellipse} = -\frac{GMm}{2a}$$ where $m \ll M$.
+\end{block}
+
+\begin{block}{Escape Speed}
+$$v_{esc}=\sqrt\frac{2GM}{R}$$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kepler's Laws}
+\vspace{-8pt}
+\begin{block}{Kepler's First Law}
+All planets move in elliptical orbits with the Sun at one focus.
+\end{block}
+
+\begin{block}{Kepler's Second Law}
+The radius vector drawn from the Sun to a planet sweeps out equal areas in equal time intervals.
+$$\frac{\Delta A}{\Delta t} = \frac{L}{2M_S}$$
+where $M_s = 1.989 \times 10^{30}$ kg is the mass of the Sun.
+\end{block}
+
+\begin{block}{Kepler's Third Law}
+$$T^2 = \left(\frac{4\pi^2}{GM_S}\right)a^3$$
+where $T$ is the orbital period of any planet and $a$ is the semi-major axis of the elliptical orbit.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Basic Definitions of Fluid Mechanics}
+
+\begin{block}{States of Matter}
+We have four basic states of matter: solids, liquids, gases, and plasma.
+\end{block}
+
+\begin{block}{Density}
+$$\rho \equiv \frac{M}{V}.$$ The density of water is 1000 kg/m$^3$.
+\end{block}
+
+\begin{block}{Pressure}
+$$P \equiv \frac{F}{A},$$ which has the SI unit of Pascal (Pa $\equiv$ N/m$^2$).
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variations of Pressure with Depth}
+
+When a fluid is at rest in a container, \emph{all portions of the fluid must be in static equilibrium} - at rest with respect to the observer.
+
+\begin{block}{Changes in Pressure}
+All points at the same depth must be at the same pressure. The pressure isn't affected by the shape of the vessel.
+$$P = P_0 + \rho gh$$
+We can use this to measure pressure with open-tube manometers or mercury barometers.
+\end{block}
+
+\begin{block}{Pascal's Principle}
+A change in pressure applied to an enclosed fluid is transmitted undiminished to every point of the fluid and to the walls of the container.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Buoyant Forces and Archimedes's Principle}
+
+Any object completely or partially submerged in a fluid is buoyed upward by a fore with magnitude equal to the weight of the fluid displaced by the object.
+$$F_B = \rho_\text{fluid}V_\text{fluid}g$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Ideal Fluids}
+
+\begin{itemize}
+\item \textbf{Non-viscous:} no internal friction force between layers
+\item \textbf{Incompressible:} constant density
+\item \textbf{Steady motion:} no change in velocity, density, and pressure for each point in time
+\item \textbf{No turbulence:} no angular velocity about its center, which means no eddy currents in the moving fluid
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fluids in Motion}
+
+\begin{block}{The Equation of Continuity}
+Constant flow rate through a tube
+$$A_1v_1 = A_2v_2$$
+\end{block}
+
+\begin{block}{Bernoulli's Equation}
+Energy conservation as applied to an ideal fluid
+$$P + \frac{1}{2}\rho v^2 + \rho gy = \text{constant}$$
+\end{block}
+
+\begin{block}{Venturi Effect}
+When the speed of a fluid increases, the pressure drops
+$$P + \frac{1}{2}\rho v^2$$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple Harmonic Motion}
+
+\begin{block}{Hooke's Law}
+$$F_s = -kx$$
+\end{block}
+
+\begin{block}{Acceleration}
+$$a = -\frac{k}{m}x$$
+\end{block}
+
+\begin{block}{Position}
+$$x = A\cos\left(\omega t + \delta\right)$$
+where $\omega = \sqrt{k/m}$ and $A$ and $\delta$ can be uniquely determined by its \textbf{initial conditions} such as the initial displacement and velocity.
+\end{block}
+
+\begin{block}{Energy}
+$$E = K + U = \frac{1}{2}kA^2 = \frac{1}{2}kx^2 + \frac{1}{2}mv^2$$
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple Harmonic Motion Definitions}
+
+\begin{itemize}
+\item The maximum displacement from equilibrium is $A$, which is called the \textbf{amplitude}.
+\item The argument of the cosine function, $\omega t + \delta$, is called the \textbf{phase} of the motion.
+\item The \textbf{period} $T$ is the shortest time satisfying the relation $x(t) = x(t+T)$.
+\item the \textbf{frequency} f is the number of cycles per second and is thus the reciprocal of the period. Its SI units are Hertz (Hz).
+\item $\omega$ is called the \textbf{angular frequency} because $$\omega = 2\pi f = \frac{2\pi}{T}.$$
+\end{itemize}
+
+\alert{The frequency and period of a simple harmonic motion are independent of the amplitude.}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple Harmonic Motion and Circular Motion}
+
+When a particle moves with constant speed in a circle, its projection onto a diameter of the circle moves with S.H.M.
+
+Consider a particle moving with constant speed $v$ in a circle of radius $A$. Its angular displacement relative to the $x$ axis is $$\theta = \omega t + \delta.$$
+
+Recall that we can always consider the motion of a particle in a plane as the superposition of its motion along the $x$ and $y$ directions.
+
+The $x$ component of its displacement from the origin (the center of the circle), its velocity, and acceleration are
+$$x = A\cos\theta = A\cos(\omega t + \delta)$$
+$$v_x = -\omega A\sin\theta = -\omega A\sin(\omega t + \delta)$$
+$$a_x = -\omega^2A\cos\theta = -\omega^2A\cos(\omega t + \delta) = -\omega^2x$$
+Thus the projection of the particle onto the $x$ axis moves with simple harmonic motion.
+\end{frame}
+
+\begin{frame}
+\frametitle{Oscillating Systems}
+Many systems are analogous to simple harmonic motion
+
+\begin{block}{Object on a Vertical Spring}
+$$T = 2\pi\sqrt\frac{m}{k}$$
+\end{block}
+
+\begin{block}{Simple Pendulum}
+$$T = 2\pi\sqrt\frac{L}{g}$$
+\end{block}
+
+\begin{block}{Physical Pendulum}
+$$T = 2\pi\sqrt\frac{I}{mgd}$$
+\end{block}
+
+\end{frame}
+\end{document}

@@ -1,0 +1,150 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage{asymptote}
+\usepackage{wrapfig}
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+\begin{document}
+\setcounter{secnumdepth}{0}
+
+\begin{center}
+\Large{CHAPTER 5 SUMMARY. \textbf{Energy}}
+
+\large{Justin Yang}
+
+\sc{November 22, 2012}
+\end{center}
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{images/05_!1work.JPG}
+\end{center}
+\end{wrapfigure}
+
+\section{Work}
+The \textbf{work} done by a constant force $\vec{F}$ that moves an object a displacement $\Delta{x}$ is defined as $$W \equiv F \Delta{x} \cos{\theta}$$ where $\Delta{x} = \left|\Delta{\vec{x}}\right|$ is the magnitude of the displacement and $\theta$ is the angle between the directions of $\vec{F}$ and $\Delta{\vec{x}}$.
+\\So $W = \vec{F} \cdot \Delta{\vec{x}}$. The work is given either by the force times the component of the displacement in the direction of the force, or the component of the force in the direction of the displacement times the displacement.
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\vspace{-20pt}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{images/05_!2workgraph.JPG}
+\end{center}
+\vspace{-20pt}
+\end{wrapfigure}
+
+\noindent
+Work is a scalar. The SI unit of work is the \textit{joule} (J), $1 \mathrm{\ J} = 1 \mathrm{\ N} \cdot \mathrm{m} = 1 \mathrm{\ kg} \cdot \mathrm{m}^2 / \mathrm{s}^2$.
+\\No work is done on an object by a force if the object moves in a direction that is perpendicular to the force.
+\\A \textbf{particle} is any object that moves so that all of its parts undergo indentical displacements during any interval of time. That is it remains perfectly rigid and moves without rotating.
+\\The total work done on a particle is the same as the work done by the net force on the particle, $$W = \sum{\vec{F_i}} \cdot \Delta{\vec{x}} = \vec{F}_\mathrm{net} \cdot \Delta{\vec{x}}.$$
+
+\subsection{Work Done by a Varying Force}
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{images/05_!3varying.JPG}
+\end{center}
+\end{wrapfigure}
+
+Suppose a particle is displaced along the $x$-axis under the action of a force whose $x$-component is $F_x$. The work done by the force, $W = F_x \Delta{x}$, is 
+the area under the $F_x$-versus-$x$ curve.
+\\When the force $F_x$ is varying we divide the path of the particle into small displacements. The sum of the resulting work on each small displacemnt defines the total work done by the force on the particle: $$W = \lim_{\Delta{x} \to 0} \sum_i {F_x \Delta{x_i}} \hspace{2cm} \left[W = \int^{x_2}_{x_1} F_x\,dx\right]$$ so the work done is the area under the $F_x$-versus-$x$ curve.
+
+\section{Kinetic Energy}
+Under a constant \textit{net} force $F_\mathrm{net}$ acting along a straight line on a particle of mass $m$, which is displaced by $\Delta{x}$ along the straight line, the work done on the particle is $$W = F_\mathrm{net} \Delta{x}.$$
+Applying Netwon's second law $F_\mathrm{net} = ma$ and the kinematic relation $v^2 - v_0^2 = 2a \Delta{x}$, which is valid for linear motion under constant acceleration, we have $$W = F_\mathrm{net} \Delta{x} = ma \Delta{x} = \frac{1}{2} mv^2 - \frac{1}{2} mv_0^2.$$
+The quantity $\frac{1}{2} mv^2$ is defined as the \textbf{kinetic energy} of the particle: $$K \equiv \frac{1}{2} mv^2.$$
+Kinetic energy is a scalar. The SI unit of kinetic energy is the same as work: $\mathrm{kg} \cdot \mathrm{m}^2 / \mathrm{s}^2$ or J.
+\\Kinetic energy is the energy of motion. It depends on the mass and speed of the particle. It does not depend on the direction of motion.
+
+\section{Work-Energy Theorem}
+We showed that the net work on a particle under a constant net force equals the increase in the kinetic energy of the particle: $$W = \Delta{K}.$$
+If the force is varying, we divide the path into small displacements and add the work on each small displacement together to obtain the total work. For each displacement the work also equals the increase in the kinetic energy, so the above relation is true even when the force is varying. This is known as the work-energy theorem:\\\centerline{\emph{The total work done on a particle is equal to the change in its kinetic energy.}}
+\\To increase the kinetic energy of a particle, work must be done on it. Or, if a particle is moving, work is required to bring it to rest.
+\\If you hold a weight above your head for 30 minutes, you did not do any work on the weight since the weight's kinetic energy does not change. Your body does physiological work that shows up as heat (as evidenced by your sweating) instead.
+
+\section{Potential Energy}
+For a system of particles, the total work done on the system by the net external forces may not equal to the increase in the kinetic energy of the system.
+\\The potential energy of a system is the energy associated with the configuration of the system. Often the work done by external forces on a system may result in an increase in the potential energy of the system.
+\\When you lift an object to a certain height, the work done by you on the object is stored as the gravitational potential energy of the system consisting of the object and the Earth.
+\\A spring is not a particle! When a spring is compressed, the work done on the spring is stored as the spring potential energy.
+
+\begin{wrapfigure}{r}{0.1\textwidth}
+\vspace{-23pt}
+\begin{center}
+\includegraphics[width=0.09\textwidth]{images/05_!4gpe.JPG}
+\end{center}
+\end{wrapfigure}
+
+\noindent
+\textit{Gravitational Potential Energy} Near the surface of the Earth the gravitational force between an object of mass $m$ and the Earth is $\vec{F} = -mg\,\hat{j}$, so the work done by gravity when an object moves from an initial position of height $h_0$ to a final position of height $h$ is $$W_g = \vec{F} \cdot \Delta{x} = -mg\,\hat{j} \cdot \Delta{\vec{x}} = -mg \Delta{h} = -mg \left(h - h_0\right)$$ which only depends on the initial and final heights.
+The gravitational potential energy of the object-Earth system, when the object is near the surface of the Earth, can thus be defined as $$U_g \equiv mgh.$$
+This is sometimes just called the potential energy of the object since Earth is so massive that its motion is negligible.
+\\The gravitational potential energy of an object is a relative quantity. Only the change in potential energy has physical signifigance.
+\\Thus the work done by gravity equals the decrease in the gravitational potential energy of the system consisting of the object and the Earth $$W_g \equiv -\Delta{U_g}.$$
+\textit{Potential Energy of a Spring} When a spring with a displacement $x_1$ from its equilibrium position is stretched to displacement $x_2$, the work done by the spring force, $F = -kx$, is given by the area of the trapezoid under the $F$-versus-$x$ curve, $$W_s = -\frac{1}{2} \left(kx_1 + kx_2\right)\left(x_2 - x_1\right) = -\left(\frac{1}{2} kx_2^2 - \frac{1}{2} kx_1^2\right)$$ which only depends on the initial and final states.
+\\The spring potential energy can thus be defined as $$U_s \equiv \frac{1}{2} kx^2$$ where the potential energy at $x = 0$ has been chosen to be zero.
+\\The work done by the spring force is then at the expense of the spring potential energy $$W_s = -\Delta{U_s}.$$
+
+\subsection{Conservative Force and Potential-Energy Function}
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\vspace{-20pt}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{images/05_!5conservative.JPG}
+\end{center}
+\vspace{-20pt}
+\end{wrapfigure}
+
+A force is conservative if the total work it does on a particle is zero when the particle moves around any closed path, returning to its initial position.
+\\In other words, the work done by a conservative force on a particle is independent of the path taken, as the particel moves from one point to another. It only depends on the endpoints 1 and 2.
+\\As in the examples of gravitational and spring potential energy, we can use this property to \textit{define} a potential-energy function $U$ such that the work done is given by the negative change of the potential energy corresponding to the conservative force $$W = \sum_i \vec{F} \cdot \Delta{\vec{x}_i} = -\Delta{U}.$$
+For a small displacement in the $x$-direction, we have $$\Delta{U} = -F_x \Delta{x} \mathrm{\ \ or\ \ } F_x = -\frac{\Delta{x}}{\Delta{x}} \hspace{2cm} \left[F_x = \frac{dU}{dx}\right]$$ so the force is the negative of the slope of the potential-energy $U$-versus-$x$ curve.
+\\As a check, the gravitational force is correctly given by the negative of the slope of the $U_g$-versus-$h$ curve.
+
+\subsection{Non-conservative Forces}
+Not all forces are conservative. When you push a box across a table along a straight line from point A to point B and back to its original position, the total work done by the push is not zero. So the push is not a conservative force.
+\\Consider a force $\vec{F} = F_0\,\hat{\Phi}$, where $\hat{\Phi}$ is a unit vector directed tangent to a circle of radius $r$. The work done by this force as we move around the circle is $F_0 2\pi r$ if we move in the direction of the force. So the force is not a conservative force.
+\\If the work done on any particular closed path is not zero, we may conclude that the force is not conservative. However, if the force is conservative, the work must be zero around \textit{all} possible closed paths. More sophisticated mathematical methods for testing the conservativeness are discussed in more advanced physics cources.
+
+\section{Conservation of Mechanical Energy}
+A \textbf{system} is a collection of particles.
+\\\textbf{External forces:} exerted by paticles \textit{not} in the system on particles in the system.
+\\\textbf{Internal forces:} exerted by particles in the system on other particles in the system.
+\\The change in the total energy of a system can be done through work and heat. Energy transferred due to a temperature difference is called heat.
+\\The total kinetic energy of a system is the sum over the kinetic energies of the particles $K = \sum{K_i}$. By the work-energy theorem for a particle, the total work done by all the forces $$W = \sum{\Delta{K_i}} = \Delta{K}$$ which is a form of the work-energy theorem for a system.
+\\The total work done on a system can be divided into three parts: work done by all external forces $W_\mathrm{ext}$, work done by all internal nonconservative forces $W_\mathrm{nc}$, and work done by all internal conservative forces $W_\mathrm{c}$: $$W = W_\mathrm{ext} + W_\mathrm{nc} + W_\mathrm{c}.$$
+The work done by all internal conservative forces can be recast as the change in the total potential energy, the sum of all potential energies, of the system: $$W_\mathrm{c} = -\Delta{U}.$$
+The sum $E_\mathrm{mech} = K + U$ is known as the total mechanical energy of the system, $$W_\mathrm{ext} + W_\mathrm{nc} = \Delta{K} + \Delta{U} = \Delta{\left(K + U\right)} = \Delta{E_\mathrm{mech}}$$ which is another form of the work-energy theorem for a system.
+\\When $W_\mathrm{ext} = 0$ and $W_\mathrm{nc} = 0$, the mechanical energy of a system is conserved: $$K_f + U_f = K_i + U_i.$$ This is called \textbf{conservation of mechanical energy} and is origin of the expression ``conservative force."
+
+\section{Conservation of Energy}
+For an isolated system, we have $W_\mathrm{ext} = 0$ and we may account of $W_\mathrm{nc}$ by changes in forms of energy other than mechanical energy.
+\\\textit{The increase or decrease in the total energy of a system can always be accounted for by the appearance or disappearance of energy somewhere else.}
+\\In a macroscopic world, dissipative nonconservative forces like kinetic friction tend to decrease the mechanical energy of a system. However, any such decrease is accompanied by a corresponding increase in thermal energy.
+\\When including systems in which chemical reactions take place, changes in mechanical energy can be accounted for by including chemical energy.
+\\When you run, your push on the ground does not work (why?). Internak chemical energy in your muscles is converted to kinetic energy of your body.
+\\Energy can also be converted to sound and electromagnetic radiation energy.
+\\\textbf{The law of energy conservation:} \textit{The total energy of the universe is constant. Energy can be converted from one form to another, or transmitted from one region to another, but energy can never be created or destroyed.}
+\\The total energy $E$ of a system can be accounted for completely by mechanical energy $E_\mathrm{mech}$, thermal energy $E_\mathrm{therm}$, chemical energy $E_\mathrm{chem}$, and other forms of energy $E_\mathrm{other}$, such as electromagnetic, sound, or nuclear energy: $$E = E_\mathrm{mech} + E_\mathrm{therm} + E_\mathrm{chem} + E_\mathrm{other}.$$
+Work and heat are the ways to transfer energy in or out of a system. If work is the only method of transfer, we have another form of the work-energy theorem, $$W_\mathrm{ext} = \Delta{E} = \Delta{E_\mathrm{mech}} + \Delta{E_\mathrm{therm}} + \Delta{E_\mathrm{chem}} + \Delta{E_\mathrm{other}}.$$
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{center}
+\includegraphics[width=0.18\textwidth]{images/05_!6friction.JPG}
+\end{center}
+\end{wrapfigure}
+\subsection{More on Kinetic Friction}
+Consider a block sliding along a table with an initial velocity $v_i$ and a final velocity $v_f$. By Newton's second law, $$-f = ma,$$ $$-f \Delta{x} = ma \Delta{x} = \frac{1}{2} m\left(v_f^2 - v_i^2\right) = \Delta{E_\mathrm{mech}}.$$
+Consider the system consisting of the block and table. By the work-energy theorem, $$W_\mathrm{ext} = \Delta{E_\mathrm{mech}} + \Delta{E_\mathrm{therm}} = 0,$$ $$\Delta{E_\mathrm{therm}} = f \Delta{x}.$$
+Thus, $f \Delta{x}$ is the energy dissipated by kinetic friction on both surfaces and it equals the increase in thermal energy of the block-table system.
+\\Note again that, it is generally \textit{not} the work done by the friction on the sliding block since careful study shows that the displacement of the frictional force on the block may not be equal to the displacement of the block.
+
+\section{Power}
+Power is the rate at which energy is transferred. The average \textbf{power} supplied by a force $\vec{F}$ is the rate at which the force does work: $$\bar{P} = \frac{\Delta{W}}{\Delta{t}} = \vec{F} \cdot \frac{\Delta{\vec{x}}}{\Delta{t}} = \vec{F} \cdot \vec{v}_{av}.$$
+In the limit of infinitesimally small $\Delta{t}$, $$P = \vec{F} \cdot \vec{v}.$$
+The SI unit of power is J/s, also called the \textbf{watt}, named after James Watt, the eighteenth-century developer of the steam engine. $1 \mathrm{\ W} = 1 \mathrm{\ J} / \mathrm{s} = 1 \mathrm{\ kg} \cdot \mathrm{m}^2 / \mathrm{s}^3$.
+\end{document}

@@ -1,0 +1,156 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage{asymptote}
+\usepackage{wrapfig}
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+\begin{document}
+\setcounter{secnumdepth}{0}
+\begin{center}
+\Large{CHAPTER 4 SUMMARY. \textbf{The Laws of Motion}}
+
+\large{Justin Yang}
+
+November 2, 2012
+\end{center}
+
+\section{Newton's Laws}
+A \textbf{force} is simply a push or a pull on some object.\\A force has both magnitude and direction, so it is a vector quantity.
+
+\subsection{Newton's First Law}
+\textit{Principle of inertia}: if an object is left alone, is not perturbed, it continues to move with a constant velocity in a straight line if it was originally moving, or it continues to stand still if it was just standing still.
+\\\textbf{Inertia} The tendency of an object to continue in its original state of motion.
+
+\hspace{1mm}
+
+\noindent
+\textbf{Mass} A measure of inertia, or the object's resistance to changes in its motion due to a force.
+
+\hspace{1mm}
+
+\noindent
+Newton formalized Galileo's principle of inertia into \textbf{Newton's first law of motion}:\\\emph{An object moves with a constant velocity unless acted upon by a nonzero net force.}
+
+\subsection{Newton's Second Law}
+Newton's second law provides a specific way of determining how the velocity of an object changes under different influences called forces.
+\emph{The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.}
+$$\vec{a} = \frac{\sum \vec{F}}{m} \mathrm{, or } \sum{\vec{F}} = \vec{F}_\mathrm{net} = m \vec{a}$$
+\\When $a = 0$, we have the condition of \textbf{equilibrium}.
+
+\hspace{1mm}
+
+\noindent
+\underline{Newton's second law is applicable on every object.}
+
+\subsection{Unit of Force}
+Newton's first and second laws allow us to define force more precisely.
+
+\hspace{1mm}
+
+\noindent
+A \textbf{force} is an external influence on an object that causes it to accelerate relative to an inertial reference frame. The direction of the force is that of the acceleration it causes and the magnitude is the product of the mass of the object and the magnitude of the acceleration.
+%intrinsic prop
+
+\hspace{1mm}
+
+\noindent
+The SI unit of force is the newton, or N. 1 N = 1 kg m/s$^2$. In the U.S. customary system, the unit of force is the pound. 1 N = 0.225 lb. The units of mass and acceleration in the U.S. customary system are the slug and ft/s$^2$.
+
+\subsection{Newton's Third Law}
+\emph{Forces always occur in equal and opposite pairs. If object A exerts a force $\vec{F}_{A, B}$ on object B, an equal but opposite force $\vec{F}_{B, A}$ is exerted by object B on object A.} $$\vec{F}_{A, B} = -\vec{F}_{B, A}$$
+The pair of forces are parts of an interaction between two objects. One force is called action and the other reaction.
+\\It is important to note that action and reaction forces act on different objects.
+
+\section{Forces in Nature}
+Forces that result from the physical contact between two objects are called \textbf{contact forces}.
+\\Forces that do not involve any direct physical contact and act at a distance are called \textbf{field forces}.
+
+\subsection{Weight}The force due to gravity.
+\\When air resistance is neglected, all falling objects near Earth's surface have the same acceleration (by experiment): $$g=9.81 \mathrm{ m/s} ^2 \approx 10 \mathrm{ m/s} ^2$$
+The force causing this acceleration is the gravitational force on the object, called weight. If the weight is the only force acting on the object, the object is said to be in \textbf{free-fall}.
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{center}
+\begin{asy}
+size(4cm);
+draw((0,0)--(100,0));
+draw((10,0)--(10,80));
+draw((10,80)--(90,80));
+draw((90,80)--(90,0));
+dot((50,40));
+draw((50,40)--(50,-10),EndArrow);
+label("$m \vec{g}$",(50,40)--(50,-10),E);
+dot((50,-70));
+draw((50,-70)--(50,-20),EndArrow);
+label("$m \vec{g'}$",(50,-70)--(50,-20),E);
+draw((20,75)--(20,0),EndArrow);
+label("$\vec{F}_{n}^{'}$",(20,60),E);
+draw((20,-75)--(20,0),EndArrow);
+label("$\vec{F}_{n}$",(20,-75)--(20,0),W);
+\end{asy}
+\end{center}
+\end{wrapfigure}
+
+\subsection{Contact Forces}
+\begin{itemize}
+	\item \textbf{Normal Force} $F_n$ Push or compression reaction force.
+	\item \textbf{Tension} $T$ Force from a string or a rope when taut.
+	\item \textbf{Spring Force} $F_x = -k \Delta{x}$ Force from the compression or stretching of a spring.
+	\item \textbf{Friction} $f$ Parallel resistive force between two surfaces.
+	\item \textbf{Drag Force} $f = b v^n$ Resistive drag force through a fluid.
+\end{itemize}
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+\begin{center}
+\includegraphics[width=3.5cm]{images/04_!friction.JPG}
+\end{center}
+\end{wrapfigure}
+
+
+\subsection{Friction} Surfaces in contact can also exert forces on each other that are parrallel to the contacting surfaces.
+
+\hspace{1mm}
+
+\noindent
+\textbf{Static Friction} The resistive force that opposes the attempted motion of an object past another object with which it is in contact. $$f_s \leq \mu_s F_n = f_{s,max}$$ $\mu_s$ is the coefficient of static friction. It depends on the nature of the surface in contact.
+
+
+\hspace{1mm}
+
+\noindent
+If you exert a horizontal force smaller than $f_{s,max}$ on a box, the frictional force will just balance this horizontal force.
+
+\hspace{1mm}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+\begin{center}
+\vspace{-20pt}
+\begin{asy}
+import graph;
+xaxis("$F_{app}$", xmin=0);
+yaxis("$f$", ymin=0);
+labelx("Applied force",(45,0));
+axes(ylabel="Frictional force\ \ \ \ \ ");
+size(6cm);
+draw((0,0)--(50,50));
+draw((50,50)--(55,40));
+draw((55,40)--(100,40));
+draw((30,10)--(10,10),EndArrow);
+label("$f_{s} = F_{app}$",(30,10),E);
+draw((50,70)--(50,50),EndArrow);
+label("$f_{s, max} = \mu_{s} F_{n}$",(50,70),N);
+draw((75,30)--(75,40),EndArrow);
+label("$f_{k} = \mu_{k} F_{n}$",(75,30),S);
+\end{asy}
+\end{center}
+\end{wrapfigure}
+
+\noindent
+\textbf{Kinetic Friction} The resistive force that opposes the motion of an object past another object with which it is in contact. It is between the surfaces of the two objects.
+\\The motion has started.
+\\Data show $$f_k = \mu_k F_n$$ $\mu_k$ is the coefficient of kinetic friction. It depends on the nature of the surface in contact.
+\\It does not depend on velocity, so it is constant once the motion starts.
+\\Experimentally, $\mu_k < \mu_s$.
+\end{document}

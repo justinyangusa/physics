@@ -1,0 +1,25 @@
+if(!settings.multipleView) settings.batchView=false;
+settings.tex="pdflatex";
+defaultfilename="notes-2";
+if(settings.render < 0) settings.render=4;
+settings.outformat="";
+settings.inlineimage=true;
+settings.embed=true;
+settings.toolbar=false;
+viewportmargin=(2,2);
+
+size(4cm);
+draw((0,0)--(100,0));
+draw((10,0)--(10,80));
+draw((10,80)--(90,80));
+draw((90,80)--(90,0));
+dot((50,40));
+draw((50,40)--(50,-10),EndArrow);
+label("$m \vec{g}$",(50,40)--(50,-10),E);
+dot((50,-70));
+draw((50,-70)--(50,-20),EndArrow);
+label("$m \vec{g'}$",(50,-70)--(50,-20),E);
+draw((20,75)--(20,0),EndArrow);
+label("$\vec{F}_{n}^{'}$",(20,60),E);
+draw((20,-75)--(20,0),EndArrow);
+label("$\vec{F}_{n}$",(20,-75)--(20,0),W);
